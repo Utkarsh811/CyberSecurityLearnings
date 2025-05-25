@@ -57,3 +57,18 @@ grep ".txt" filters only .txt files
 whoami -> return current user account name
 hostname -> given system name 
 uname -> gives system name and details 
+
+
+networking commands
+wget and curl command
+curl -o myfile.html https://www.htmi.com
+
+What is Nmap?
+Nmap stands for Network Mapper. It is a powerful and widely used open-source tool for network discovery and security auditing.
+Key Purposes of Nmap:
+Discover devices (hosts) on a network
+Identify open ports on those devices
+Detect services running on ports (e.g., HTTP, FTP)
+Determine the operating system (OS) and version of devices
+Perform vulnerability scanning using scripts
+Map network topology
