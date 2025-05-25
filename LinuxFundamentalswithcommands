@@ -1,1 +1,59 @@
-Linux Commands with Fundamental
+command [options] [arguments]
+command	                  The program or utility you want to run (e.g., ls, mkdir, ping)
+options	                  Modifiers that change how the command behaves (e.g., -l, --help)
+arguments	                Targets or inputs the command acts on (e.g., files, directories, IPs)
+
+Example 1: Listing Files
+ls -l /home/user
+ls → list files
+
+-l → option for "long listing format"
+
+/home/user → directory to list
+
+🔸 Example 2: Pinging a Host
+ping -c 4 google.com
+ping → command
+
+-c 4 → option to send 4 packets
+
+google.com → argument (destination)
+
+🔸 Example 3: Creating a Directory
+mkdir -p /home/user/newfolder
+mkdir → make directory
+
+-p → option to create parent folders if they don't exist
+
+/home/user/newfolder → directory path (argument)
+
+Special characters or operators:  *, ?, ~, /, ., .., |, >, <, >>, &, ;, &&, ||, $, #, ', ", ` `, \, {}, (), !
+Wildcards: *, ?, [a-z], {1..5}
+Control: Ctrl+C, Ctrl+Z, Ctrl+D, Ctrl+R, Ctrl+U, Ctrl+K, Tab
+
+
+
+Type	Examples
+Arithmetic	+, -, *, /, %, **
+Relational	-eq, -gt, -lt, etc.
+String	=, !=, <, >, -z, -n
+Logical	&&, `
+Redirection	>, >>, <, 2>, &>, `
+File tests	-f, -d, -x, -e, -s, etc.
+Grouping	{}, (), ;, :
+
+🔹 Symbol: | (pipe)
+✅ Purpose:
+Used to chain commands so they work together like an assembly line.
+command1 | command2 | command3 ...
+Each command takes input from the previous one’s standard output (stdout).
+EXAMPLE
+ls | grep ".txt"
+ls lists files
+grep ".txt" filters only .txt files
+
+
+
+whoami -> return current user account name
+hostname -> given system name 
+uname -> gives system name and details 
