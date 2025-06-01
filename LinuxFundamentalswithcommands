@@ -59,6 +59,18 @@ hostname -> given system name
 uname -> gives system name and details 
 
 
+When you enter a URL, your system uses DNS (Domain Name System) to resolve it into an IP address — this is the actual address used for communication.
+
+🔍 Ways to Find the IP Address of a URL:
+1. Using ping
+ping example.com
+This will show the IP address in the output:
+2. Using nslookup
+nslookup example.com
+Shows the domain’s IP address and DNS server used:
+
+
+
 networking commands
 wget and curl command
 curl -o myfile.html https://www.htmi.com
