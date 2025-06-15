@@ -75,6 +75,9 @@ Check which version of a tool is being run.
 Verify if a tool is installed and available in the current shell's PATH.
 
 
+Example (search from current directory):
+find . -type f -name "*.apk"
+
 networking commands
 wget and curl command
 curl -o myfile.html https://www.htmi.com
