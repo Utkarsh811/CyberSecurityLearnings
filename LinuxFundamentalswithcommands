@@ -69,6 +69,10 @@ This will show the IP address in the output:
 nslookup example.com
 Shows the domain’s IP address and DNS server used:
 
+which command ->
+Use Cases:
+Check which version of a tool is being run.
+Verify if a tool is installed and available in the current shell's PATH.
 
 
 networking commands
