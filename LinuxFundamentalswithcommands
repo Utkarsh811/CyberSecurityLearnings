@@ -91,3 +91,17 @@ Detect services running on ports (e.g., HTTP, FTP)
 Determine the operating system (OS) and version of devices
 Perform vulnerability scanning using scripts
 Map network topology
+
+
+
+
+curl command architecture
+
+curl -X 'POST' \
+  'http://api-broken-access.challenge01.root-me.org/api/signup' \
+  -H 'accept: application/json' \
+  -H 'Content-Type: application/json' \
+  -d '{
+  "username": "string",
+  "password": "string"
+}'
