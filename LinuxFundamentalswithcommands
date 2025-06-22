@@ -96,6 +96,8 @@ Map network topology
 
 sudo -i gives you the root shell access
 
+sudo su to become the root
+
 docker ps -a to view all the container despite stopped or running
 
 curl command architecture
