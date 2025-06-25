@@ -135,3 +135,12 @@ OS	Sensitive Files
 Linux	/etc/passwd, /etc/shadow, /var/log/, /home/
 Windows	C:\Windows\System32\, C:\boot.ini, C:\Users\
 
+
+..%2f..%2fetc/passwd
+
+....//....//etc/passwd
+
+..\/..\/etc/passwd
+
+%252e%252e%252fetc/passwd (double-encoded)
+
