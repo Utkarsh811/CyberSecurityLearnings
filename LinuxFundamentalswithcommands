@@ -116,5 +116,17 @@ curl -X 'POST' \
 }'
 
 
+WEB SERVER FILE HIERARCHY
 
+/var/www/html/
+├── index.html         ← Default homepage
+├── css/
+│   └── style.css
+├── js/
+│   └── script.js
+├── images/
+│   └── logo.png
+├── uploads/
+│   └── userfile.txt   ← Often exploited via LFI/path traversal
+└── config.php         ← Should not be publicly accessible
 
