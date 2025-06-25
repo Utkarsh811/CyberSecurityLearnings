@@ -1,0 +1,39 @@
+🧰 Where is URL Encoding Used?
+In Web Requests:
+
+Query parameters: ?id=123&name=John%20Doe
+
+Form submissions using application/x-www-form-urlencoded
+
+URLs embedded in links, JavaScript, redirects
+
+In Exploits and CTF Challenges:
+
+Bypassing filters or web application firewalls (WAFs)
+
+Encoding payloads to evade detection
+
+Smuggling malicious inputs past naive validation mechanisms
+
+🎯 Why URL Encoding Matters in CTFs
+🔓 Bypassing Input Filters:
+
+A vulnerable app may block ../ but allow %2e%2e%2f (encoded path traversal).
+
+Encoding tricks can help inject payloads undetected.
+
+🎯 Exploiting Web Vulnerabilities:
+
+Used in XSS, LFI, SQLi, and path traversal.
+
+Encoded payloads avoid breaking the structure of the URL.
+
+🛡️ Evading WAFs:
+
+Many WAFs decode inputs once. Double encoding (%252e) can trick them.
+
+🔁 Canonicalization Attacks:
+
+Servers interpret URLs differently depending on how they're decoded.
+
+Useful for access control bypass or directory traversal.
