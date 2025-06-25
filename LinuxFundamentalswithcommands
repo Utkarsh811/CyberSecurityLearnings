@@ -144,3 +144,13 @@ Windows	C:\Windows\System32\, C:\boot.ini, C:\Users\
 
 %252e%252e%252fetc/passwd (double-encoded)
 
+ Step-by-Step Breakdown
+🔹 Step 0: Original Payload
+You input:
+%252e%252e%252fetc/passwd
+Let’s highlight what this is:
+%25 = % in URL encoding
+So:
+%252e = %2e → .
+%252f = %2f → /
+This string is a double-encoded version of ../etc/passwd.
