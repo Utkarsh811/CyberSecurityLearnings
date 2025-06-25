@@ -130,3 +130,8 @@ WEB SERVER FILE HIERARCHY
 │   └── userfile.txt   ← Often exploited via LFI/path traversal
 └── config.php         ← Should not be publicly accessible
 
+
+OS	Sensitive Files
+Linux	/etc/passwd, /etc/shadow, /var/log/, /home/
+Windows	C:\Windows\System32\, C:\boot.ini, C:\Users\
+
