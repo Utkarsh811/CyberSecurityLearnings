@@ -10,3 +10,8 @@ nmap -p- 172.18.50.1
 🛠️ Add Service Detection
 nmap -sV -p 80,443,8080 172.18.50.1
 → Detects services and versions running on ports
+
+To scan a network for open (live) hosts when given a subnet (e.g., 172.18.50.0/24), use nmap's host discovery mode.
+🔍 Basic Host Discovery (Ping Sweep)
+nmap -sn 172.18.50.0/24
+-sn (skip port scan): Only checks if hosts are up using ping, ARP, etc.
