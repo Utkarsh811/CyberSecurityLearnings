@@ -18,3 +18,7 @@ nmap -sn 172.18.50.0/24
 
 nmap -p 80,22 --open 172.18.50.0/24
 --open: Show only IPs with those ports open
+
+sudo nmap -O 172.18.50.0/24
+May require root
+Shows OS info of discovered hosts
