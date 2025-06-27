@@ -15,3 +15,6 @@ To scan a network for open (live) hosts when given a subnet (e.g., 172.18.50.0/2
 🔍 Basic Host Discovery (Ping Sweep)
 nmap -sn 172.18.50.0/24
 -sn (skip port scan): Only checks if hosts are up using ping, ARP, etc.
+
+nmap -p 80,22 --open 172.18.50.0/24
+--open: Show only IPs with those ports open
