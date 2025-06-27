@@ -6,3 +6,7 @@ nmap -p 22,80,443 172.18.50.1
 
 🔬 Scan All 65535 TCP Ports
 nmap -p- 172.18.50.1
+
+🛠️ Add Service Detection
+nmap -sV -p 80,443,8080 172.18.50.1
+→ Detects services and versions running on ports
