@@ -22,3 +22,27 @@ nmap -p 80,22 --open 172.18.50.0/24
 sudo nmap -O 172.18.50.0/24
 May require root
 Shows OS info of discovered hosts
+
+nmap  -sn ->> search for which IPs/ host  are up 
+-sC → Default Script Scan
+-sC tells Nmap to run default NSE (Nmap Scripting Engine) scripts.
+These scripts do things like:
+Detect login banners (FTP, SSH, SMTP)
+Pull SSL certificate info
+Check for anonymous FTP
+Test HTTP titles, headers, methods
+Attempt version detection enhancements
+It’s like basic recon automation using prewritten intelligence.
+🔍 Example
+nmap -sC 10.10.10.10
+Returns:
+SSH version
+HTTP server banner
+FTP anonymous login check
+SSL cert details (if HTTPS)
+
+✅ -sV → Service Version Detection
+-sV tells Nmap to actively probe open ports to determine:
+What service is running (e.g. Apache, nginx)
+What version it is (e.g. Apache 2.4.38)
+Nmap sends probes and reads responses to identify software — great for vulnerability matching
