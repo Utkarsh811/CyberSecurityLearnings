@@ -46,3 +46,6 @@ SSL cert details (if HTTPS)
 What service is running (e.g. Apache, nginx)
 What version it is (e.g. Apache 2.4.38)
 Nmap sends probes and reads responses to identify software — great for vulnerability matching
+
+dirb
+dirb http://10.10.131.124 /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -X .php,.html,.txt; 
